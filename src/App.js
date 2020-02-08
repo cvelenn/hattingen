@@ -12,11 +12,16 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
 
+import {Helmet} from 'react-helmet'
+
 function App() {
   return (
     <Router>
       <div>
-
+      <Helmet>
+        <title>Here's the Title!</title>
+        <meta name="description" content="This is what you want to show as the page content in the Google SERP Listing" />
+      </Helmet>
       <Navbar bg="light" expand="lg"> 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
