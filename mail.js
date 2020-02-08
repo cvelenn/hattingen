@@ -1,35 +1,24 @@
 var nodemailer = require("nodemailer");
 
-async function main() {
+var transporter = nodemailer.createTransport({
+  service: "Gmail",
+  auth: {
+    user: "cvelenn@gmail.com",
+    pass: "130486gmail22"
+  }
+});
+//https://myaccount.google.com/lesssecureapps set this on "on"
+var mailOptions = {
+    from: "no-reply@gmail.com",
+    to: "cvelenn@gmail.com",
+    subject: "Sending Email using Node.js",
+    text: "That was easy! " + new Date()
+  };
 
-    let testAccount = await nodemailer.createTestAccount();
-
-    // create reusable transporter object using the default SMTP transport
-    let transporter = nodemailer.createTransport({
-        host: "smtp.ethereal.email",
-        port: 587,
-        secure: false, // true for 465, false for other ports
-        auth: {
-            user: testAccount.user, // generated ethereal user
-            pass: testAccount.pass // generated ethereal password
-        }
-    });
-
-    var mailOptions = {
-        from: "youremail@gmail.com",
-        to: "cvelenn@gmail.com",
-        subject: "Sending Email using Node.js",
-        text: "That was easy!"
-    };
-
-    transporter.sendMail(mailOptions, function(error, info) {
-        if (error) {
-        console.log(error);
-        } else {
-        console.log("Email sent: " + info.response);
-        }
-    });
-
-}
-
-main().catch(console.error);
+  transporter.sendMail(mailOptions, function(error, info) {
+    if (error) {
+      console.log(error);
+    } else {
+      console.log("Email sent: " + info.response);
+    }
+  });
