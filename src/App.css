@@ -36,11 +36,15 @@
     transform: rotate(360deg);
   }
 }
-
+body {
+  background-image: url('/images/BG-Texture.png');
+}
 .container-overflow {
   overflow: hidden;
 }
-
+.white {
+  background-color: white;
+}
 .fit {
   background-size: contain;
   background-repeat: no-repeat;
@@ -54,6 +58,14 @@
 .wide-img {
   width: 100%;
   height: 100%;
+}
+.text {
+  margin-left: 10%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  margin-right: 40%;
+  color: white;
+  float: left;
 }
 .img-clock {
   width: 40%;
@@ -78,6 +90,9 @@ img.haircut-right {
   margin-left: auto;
   margin-right: auto;
   display: block;
+}
+.telescope {
+  width: 50%;
 }
 .middle {
   width: 80%;
@@ -120,4 +135,38 @@ img.hover:hover {
 }
 img.hover {
   filter: none;
+}
+.rocks {
+  background-image: url('/images/shutterstock_-12.png');
+}
+.strip {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+.mac {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  left: 10%;
+  top: 0px;
+}
+.mac img {
+  width: 100%;
+}
+.circle-left {
+  background-image: url('/images/Group 3230.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  overflow: hidden;
+  width: 50%;
+  padding-bottom: 37%;
+}
+.inner-div {
+  padding: 20px;
+}
+.video {
+  top: 0px;
+  position: absolute;
 }

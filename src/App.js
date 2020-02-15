@@ -1,6 +1,8 @@
 import React from 'react';
 import Home from './Home';
 import About from './About';
+import Footer from './Footer';
+
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -46,6 +48,7 @@ function App() {
             <Home />
           </Route>
         </Switch>
+        <Footer />
       </div>
     </Router>
   );

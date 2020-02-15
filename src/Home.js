@@ -1,7 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
+import ReactPlayer from 'react-player';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 function Home() {
+  const [video, setVideo] = useState(false);
+
+  let settings = {
+    dots: false,
+    infinite: true,
+    speed: 3000,
+    arrows: false,
+    autoplaySpeed: 500,
+    slidesToShow: 1,
+    autoplay: true
+  };
   return (
     <div>
       <Helmet>
@@ -12,10 +27,36 @@ function Home() {
         />
       </Helmet>
       <div className='wide'>
-        <img className='wide-img' src='images/main.jpg' alt='' />
+        <Slider {...settings}>
+          <div>
+            <img
+              className='wide-img'
+              src='images/shutterstock_-28.png'
+              alt=''
+            />
+          </div>
+          <div>
+            <img
+              className='wide-img'
+              src='images/shutterstock_-29.png'
+              alt=''
+            />
+          </div>
+          <div>
+            <img
+              className='wide-img'
+              src='images/shutterstock_-30.png'
+              alt=''
+            />
+          </div>
+        </Slider>
       </div>
-      <div className='wide'>
-        <img className='wide-img' src='images/shutterstock_-15.png' alt='' />
+      <div className='wide relative'>
+        <div className='text'>
+          Haare gehören zu dem, was uns mit als erstes auffällt, wenn wir
+          jemanden kennen lernen. Sie sind ein essentieller Teil unseres
+          Erscheinungsbildes und das Sinnbild von Jugend, Gesundheit und
+        </div>
         <img
           className='img-clock'
           src='images/shutterstock_259084145crop.png'
@@ -34,7 +75,7 @@ function Home() {
           alt=''
         />
       </div>
-      <div className='wide'>
+      <div className='wide white'>
         <div className='middle'>
           <div className='third'>
             <img alt='' src='images/Group 3038.png' />
@@ -48,7 +89,7 @@ function Home() {
         </div>
       </div>
       <div className='wide relative'>
-        <img className='wide-img' alt='' src='images/microscope2.png' />
+        <img className='telescope' alt='' src='images/teleskop2.png' />
         <div className='middle-panel'>
           <div className='left-panel'>
             <img
@@ -84,15 +125,50 @@ function Home() {
           </div>
         </div>
       </div>
-
-      {/* <div className='container-overflow'>
-        <div className='fit sec-2' />
-        <div className='fit sec-2-img'></div>
-      </div> */}
-      {/* <div className='container-overflow'>
-        <div className='fit sec-3' />
-        <div className='fit sec-3-2' />
-      </div> */}
+      <div className='wide rocks'>
+        <div>
+          Haare gehören zu dem, was uns mit als erstes auffällt, wenn wir
+          jemanden kennen lernen. Sie sind ein essentieller Teil unseres
+          Erscheinungsbildes und das Sinnbild von Jugend, Gesundheit und
+        </div>
+        <div className='relative'>
+          <img className='wide strip' alt='' src='images/shutterstock_-4.png' />
+          <div className='mac'>
+            <img
+              src='images/Mac-Video.png'
+              alt=''
+              onClick={() => setVideo(true)}
+            />
+            {video && (
+              <ReactPlayer
+                className='video'
+                width='100%'
+                height='100%'
+                url='https://www.youtube.com/watch?v=YNB-JD7iPoQ'
+                playing='false'
+                controls='true'
+                onEnded={() => {
+                  setVideo(false);
+                }}
+              />
+            )}
+          </div>
+        </div>
+        <div className='relative circle-container'>
+          <div className='circle-left'>
+            <div className='inner-div'>
+              Haare gehören zu dem, was uns mit als erstes auffällt, wenn wir
+              jemanden kennen lernen. Sie sind ein essen
+            </div>
+          </div>
+          <div className='circle-left'>
+            <div className='inner-div'>
+              Haare gehören zu dem, was uns mit als erstes auffällt, wenn wir
+              jemanden kennen lernen. Sie sind ein essen
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
