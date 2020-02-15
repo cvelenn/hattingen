@@ -37,7 +37,87 @@
   }
 }
 
+.container-overflow {
+  overflow: hidden;
+}
+
 .fit {
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 0;
+  padding-top: 66.64%;
+}
+.wide {
+  width: 100%;
+}
+.wide-img {
   width: 100%;
   height: 100%;
+}
+.img-clock {
+  width: 40%;
+  position: absolute;
+  right: 0px;
+  z-index: 1;
+}
+img.haircut {
+  width: 43%;
+}
+img.haircut-right {
+  position: absolute;
+  width: 57%;
+}
+.third {
+  width: 33%;
+  display: inline-block;
+  padding: 4%;
+}
+.third img {
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.middle {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.relative {
+  position: relative;
+}
+.middle-panel {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  padding-left: 10%;
+  padding-right: 5%;
+  position: absolute;
+  top: 0px;
+}
+.left-panel {
+  width: 50%;
+  float: left;
+}
+.right-panel {
+  width: 50%;
+  float: right;
+}
+.left-panel {
+  padding-right: 2%;
+}
+.up-panel {
+  padding-bottom: 2%;
+}
+.left-image {
+  width: 50%;
+}
+img.hover:hover {
+  filter: sepia(50%);
+}
+img.hover {
+  filter: none;
 }
