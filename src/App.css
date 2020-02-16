@@ -45,6 +45,9 @@ body {
 .white {
   background-color: white;
 }
+.white-text {
+  color: white;
+}
 .fit {
   background-size: contain;
   background-repeat: no-repeat;
@@ -166,7 +169,24 @@ img.hover {
 .inner-div {
   padding: 20px;
 }
-.video {
+.video-container {
   top: 0px;
   position: absolute;
+  width: 66%;
+  height: 56%;
+  top: 10%;
+  left: 17%;
+}
+.menu {
+  color: red;
+}
+.play {
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  width: 20% !important;
+  filter: invert(50%);
+}
+.play:hover {
+  filter: invert(1);
 }

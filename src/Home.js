@@ -134,38 +134,36 @@ function Home() {
         <div className='relative'>
           <img className='wide strip' alt='' src='images/shutterstock_-4.png' />
           <div className='mac'>
+            <img src='images/Mac-Video.png' alt='' />
             <img
-              src='images/Mac-Video.png'
+              src='images/play.png'
+              className='play'
               alt=''
               onClick={() => setVideo(true)}
             />
             {video && (
-              <ReactPlayer
-                className='video'
-                width='100%'
-                height='100%'
-                url='https://www.youtube.com/watch?v=YNB-JD7iPoQ'
-                playing='false'
-                controls='true'
-                onEnded={() => {
-                  setVideo(false);
-                }}
-              />
+              <div className='video-container'>
+                <ReactPlayer
+                  className='video'
+                  width='100%'
+                  height='100%'
+                  url='https://www.youtube.com/watch?v=YNB-JD7iPoQ'
+                  playing='false'
+                  controls='true'
+                  onEnded={() => {
+                    setVideo(false);
+                  }}
+                />
+              </div>
             )}
           </div>
         </div>
         <div className='relative circle-container'>
           <div className='circle-left'>
-            <div className='inner-div'>
-              Haare gehören zu dem, was uns mit als erstes auffällt, wenn wir
-              jemanden kennen lernen. Sie sind ein essen
-            </div>
+            <div className='inner-div'></div>
           </div>
           <div className='circle-left'>
-            <div className='inner-div'>
-              Haare gehören zu dem, was uns mit als erstes auffällt, wenn wir
-              jemanden kennen lernen. Sie sind ein essen
-            </div>
+            <div className='inner-div'></div>
           </div>
         </div>
       </div>

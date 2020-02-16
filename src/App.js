@@ -23,16 +23,20 @@ function App() {
             content='This is what you want to show as the page content in the Google SERP Listing'
           />
         </Helmet>
-        <Navbar bg='light' expand='lg'>
+        <Navbar expand='lg' className='menu'>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>
             <Nav className='mr-auto'>
               <NavItem className='nav-link' href='/' to='/'>
-                <Link to='/'>Home</Link>
+                <Link className='white-text' to='/'>
+                  Home
+                </Link>
               </NavItem>
               <NavItem className='nav-link' href='/about' to='/'>
                 {' '}
-                <Link to='/about'>About</Link>
+                <Link className='white-text' to='/about'>
+                  About
+                </Link>
               </NavItem>
             </Nav>
           </Navbar.Collapse>
