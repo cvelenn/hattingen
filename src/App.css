@@ -117,11 +117,11 @@ img.haircut-right {
   top: 0px;
 }
 .left-panel {
-  width: 50%;
   float: left;
+  width: 48%;
 }
 .right-panel {
-  width: 50%;
+  width: 48%;
   float: right;
 }
 .left-panel {
@@ -177,9 +177,7 @@ img.hover {
   top: 10%;
   left: 17%;
 }
-.menu {
-  color: red;
-}
+
 .play {
   position: absolute;
   top: 20%;
@@ -189,4 +187,63 @@ img.hover {
 }
 .play:hover {
   filter: invert(1);
+}
+.slick-dots {
+  bottom: 5%;
+}
+.slick-dots li button:before {
+  font-size: 20px;
+  line-height: 20px;
+}
+.header {
+  background-color: white;
+  padding-bottom: 4%;
+  position: relative;
+}
+.line {
+  bottom: 0px;
+  position: absolute;
+}
+
+.menu-container {
+  position: absolute;
+  width: 80%;
+  top: 25%;
+  z-index: 1;
+  left: 10%;
+  background-image: url('/images/BG-Texture.png');
+}
+
+.menu-container .white-text:hover {
+  color: #bb9a73;
+}
+.hamburger {
+  width: 4%;
+  left: 5%;
+  position: relative;
+  padding-bottom: 2%;
+}
+.hamburger:hover {
+  filter: sepia(100%);
+}
+.logo {
+  width: 25%;
+  left: 30%;
+  position: relative;
+  padding: 1%;
+}
+.line-menu {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+.line-menu-up {
+  top: 100%;
+}
+.line-menu-down {
+  display: none;
+}
+.page-item {
+  padding: 5%;
+  padding-left: 10%;
 }

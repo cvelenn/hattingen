@@ -2,15 +2,11 @@ import React from 'react';
 import Home from './Home';
 import About from './About';
 import Footer from './Footer';
-
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
-
-import { Navbar, Nav, NavItem } from 'react-bootstrap';
-
+import Header from './Header';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
+
+import './App.css';
 
 function App() {
   return (
@@ -23,25 +19,8 @@ function App() {
             content='This is what you want to show as the page content in the Google SERP Listing'
           />
         </Helmet>
-        <Navbar expand='lg' className='menu'>
-          <Navbar.Toggle aria-controls='basic-navbar-nav' />
-          <Navbar.Collapse id='basic-navbar-nav'>
-            <Nav className='mr-auto'>
-              <NavItem className='nav-link' href='/' to='/'>
-                <Link className='white-text' to='/'>
-                  Home
-                </Link>
-              </NavItem>
-              <NavItem className='nav-link' href='/about' to='/'>
-                {' '}
-                <Link className='white-text' to='/about'>
-                  About
-                </Link>
-              </NavItem>
-            </Nav>
-          </Navbar.Collapse>
-        </Navbar>
 
+        <Header />
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
