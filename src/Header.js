@@ -19,14 +19,26 @@ function Header() {
       <img className='wide line' src='/images/Rectangle.png' alt='' />
 
       <div className='menu-container'>
-        <img
-          className='hamburger'
-          src='/images/hamburger.png'
-          alt=''
-          onClick={e => {
-            setShow(!show);
-          }}
-        />
+        {!show && (
+          <img
+            className='hamburger'
+            src='/images/hamburger.png'
+            alt=''
+            onClick={e => {
+              setShow(true);
+            }}
+          />
+        )}
+        {show && (
+          <img
+            className='hamburger'
+            src='/images/x.png'
+            alt=''
+            onClick={e => {
+              setShow(false);
+            }}
+          />
+        )}
         <img className='logo' src='/images/Logo.png' alt='' />
         {!show && (
           <img
