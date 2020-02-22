@@ -22,14 +22,14 @@ function FAQ() {
         />
       </div>
       <div className='wide rocks faq-container'>
-        <FAQElement question='question' answer='answer' id='1' />
-        <FAQElement question='question' answer='answer' id='2' />
-        <FAQElement question='question' answer='answer' id='3' />
-        <FAQElement question='question' answer='answer' id='4' />
-        <FAQElement question='question' answer='answer' id='5' />
-        <FAQElement question='question' answer='answer' id='6' />
-        <FAQElement question='question' answer='answer' id='7' />
-        <FAQElement question='question' answer='answer' id='8' />
+        <FAQElement question='question' answer='answer' />
+        <FAQElement question='question' answer='answer' />
+        <FAQElement question='question' answer='answer' />
+        <FAQElement question='question' answer='answer' />
+        <FAQElement question='question' answer='answer' />
+        <FAQElement question='question' answer='answer' />
+        <FAQElement question='question' answer='answer' />
+        <FAQElement question='question' answer='answer' />
       </div>
       <div className='wide relative'>
         <img className='telescope' alt='' src='images/teleskop2.png' />

@@ -53,7 +53,7 @@ function Transplantation() {
           </table>
         </div>
 
-        <div className='wide center-table-container'>
+        <div id='preis' className='wide center-table-container'>
           <table>
             <thead>
               <th>fus</th>

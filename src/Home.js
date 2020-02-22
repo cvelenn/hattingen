@@ -65,7 +65,7 @@ function Home() {
           alt=''
         />
       </div>
-      <div className='wide'>
+      <div className='wide' id='hairfall'>
         <img
           className='haircut'
           src='images/shutterstock_568820404.png'

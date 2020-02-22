@@ -73,11 +73,6 @@ function Header() {
               </Link>
             </div>
             <div className='page-item'>
-              <Link className='white-text' to='/still'>
-                Stille
-              </Link>
-            </div>
-            <div className='page-item'>
               <Link className='white-text' to='/faq'>
                 FAQ
               </Link>

@@ -354,3 +354,34 @@ img.hover {
 .input-field {
   min-width: 100px;
 }
+
+.footer {
+  font-family: 'PT Serif';
+  font-size: 16px;
+  background-color: #001e2e;
+  padding: 2%;
+}
+.footer h {
+  font-family: Anton;
+  font-size: 20px;
+}
+.footer .follow-us {
+  font-family: 'Dancing Script';
+  font-size: 40px;
+  padding-top: 2%;
+}
+.footer .max-width {
+  max-width: 230px;
+}
+.inline-block {
+  color: white;
+  padding-left: 10%;
+  display: inline-block;
+  vertical-align: top;
+}
+.padding-top-2 {
+  padding-top: 2%;
+}
+.inline-block a {
+  color: white;
+}
