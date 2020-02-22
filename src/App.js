@@ -1,6 +1,11 @@
 import React from 'react';
 import Home from './Home';
 import About from './About';
+import Transplantation from './Transplantation';
+import Still from './Still';
+import Galery from './Galery';
+import FAQ from './FAQ';
+import Contact from './Contact';
 import Footer from './Footer';
 import Header from './Header';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
@@ -26,6 +31,21 @@ function App() {
         <Switch>
           <Route path='/about'>
             <About />
+          </Route>
+          <Route path='/transplantation'>
+            <Transplantation />
+          </Route>
+          <Route path='/still'>
+            <Still />
+          </Route>
+          <Route path='/faq'>
+            <FAQ />
+          </Route>
+          <Route path='/galerie'>
+            <Galery />
+          </Route>
+          <Route path='/contact'>
+            <Contact />
           </Route>
           <Route path='/'>
             <Home />

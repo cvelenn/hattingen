@@ -4,6 +4,8 @@ import ReactPlayer from 'react-player';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import Circles from './Circles';
+import MiniGalery from './MiniGalery';
 
 function Home() {
   const [video, setVideo] = useState(false);
@@ -90,40 +92,7 @@ function Home() {
       </div>
       <div className='wide relative'>
         <img className='telescope' alt='' src='images/teleskop2.png' />
-        <div className='middle-panel'>
-          <div className='left-panel'>
-            <img
-              className='wide hover'
-              alt=''
-              src='images/shutterstock_-17.png'
-            />
-          </div>
-          <div className='right-panel right-panel-main'>
-            <div className='up-panel'>
-              <img
-                className='wide padding hover'
-                alt=''
-                src='images/swish0504.png'
-              />
-            </div>
-            <div className='down-panel'>
-              <div className='left-panel'>
-                <img
-                  className='wide padding hover'
-                  alt=''
-                  src='images/swish1280.png'
-                />
-              </div>
-              <div className='right-panel'>
-                <img
-                  className='wide padding hover'
-                  alt=''
-                  src='images/swish1578.png'
-                />
-              </div>
-            </div>
-          </div>
-        </div>
+        <MiniGalery />
       </div>
       <div className='wide rocks'>
         <div>
@@ -158,14 +127,7 @@ function Home() {
             )}
           </div>
         </div>
-        <div className='relative circle-container'>
-          <div className='circle-left'>
-            <div className='inner-div'></div>
-          </div>
-          <div className='circle-left'>
-            <div className='inner-div'></div>
-          </div>
-        </div>
+        <Circles />
       </div>
     </div>
   );

@@ -10,9 +10,10 @@ function Header() {
     };
   });
   function handleClickOutside() {
-    if (show) {
-      setShow(false);
-    }
+    //if (show) {
+    // setShow(false);
+    //}
+    //setShow(!show);
   }
   return (
     <div className='header wide'>
@@ -59,6 +60,36 @@ function Header() {
             <div className='page-item'>
               <Link className='white-text' to='/'>
                 Home
+              </Link>
+            </div>
+            <div className='page-item'>
+              <Link className='white-text' to='/transplantation'>
+                Hairtransplatation
+              </Link>
+            </div>
+            <div className='page-item'>
+              <Link className='white-text' to='/still'>
+                Stille
+              </Link>
+            </div>
+            <div className='page-item'>
+              <Link className='white-text' to='/still'>
+                Stille
+              </Link>
+            </div>
+            <div className='page-item'>
+              <Link className='white-text' to='/faq'>
+                FAQ
+              </Link>
+            </div>
+            <div className='page-item'>
+              <Link className='white-text' to='/galerie'>
+                Galerie
+              </Link>
+            </div>
+            <div className='page-item'>
+              <Link className='white-text' to='/contact'>
+                Contact
               </Link>
             </div>
             <div className='page-item'>
