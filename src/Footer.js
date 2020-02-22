@@ -1,28 +1,13 @@
 import React from 'react';
+import ContactSection from './ContactSection';
+import FollowUs from './FollowUs';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 
 function Footer() {
   return (
     <div className='footer'>
-      <div className='inline-block'>
-        <h className='gold-text'>KONTAKT</h>
-        <div className='max-width'>
-          Hattingen Hair Transplantation Schwertstrasse 4 CH – 8200 Schaffhausen
-        </div>
-        <div>
-          <span className='gold-text'>Phone:</span>
-          <span> +41 (0) 52 659 53 50</span>
-        </div>
-        <div>
-          <span className='gold-text'>FAX:</span>
-          <span> +41 (0) 52 659 53 52</span>
-        </div>
-        <div>
-          <span className='gold-text'>Email:</span>
-          <span> Info@hattingenhair.com</span>
-        </div>
-      </div>
+      <ContactSection />
 
       <div className='inline-block'>
         <h className='gold-text'>LINK</h>
@@ -52,15 +37,7 @@ function Footer() {
         <div>Weitere Beratungsorte </div>
       </div>
 
-      <div className='inline-block padding-top-2'>
-        <h className='gold-text follow-us'>Follow us</h>
-        <div>
-          <a href>FACEBOOK</a>
-        </div>
-        <div>
-          <a href>INSTAGRAM</a>
-        </div>
-      </div>
+      <FollowUs />
     </div>
   );
 }
