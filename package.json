@@ -2,7 +2,7 @@
   "name": "hattingen",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://cvelenn.github.io/hattingen",
+  "homepage": "https://cvelenn.github.io/hattingen/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
