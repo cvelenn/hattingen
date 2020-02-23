@@ -1,49 +1,60 @@
 body {
   background-image: url('/images/BG-Texture.png');
 }
-.container-overflow {
-  overflow: hidden;
-}
-.white {
-  background-color: white;
-}
-.white-text {
-  color: white;
-}
-.fit {
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 0;
-  padding-top: 66.64%;
-}
+
 .wide {
   width: 100%;
+  position: relative;
 }
 .wide-img {
   width: 100%;
   height: 100%;
 }
-.text {
+.center-text {
+  text-align: center;
+}
+.pt-serif {
+  font-family: 'PT Serif';
+}
+.anton {
+  font-family: 'Anton';
+}
+/* //asd */
+.text-short {
   margin-left: 10%;
   margin-top: 10%;
   margin-bottom: 10%;
   margin-right: 40%;
-  color: white;
-  float: left;
+}
+.text-short-small-margin {
+  margin-right: 10%;
 }
 .img-clock {
   width: 40%;
   position: absolute;
   right: 0px;
   z-index: 1;
+  top: 0px;
+}
+.haircut {
+  background: url('/images/shutterstock_-1.png');
+  background-size: cover;
+}
+.haircut-left {
+  display: inline-block;
+  width: 43%;
 }
 img.haircut {
   width: 43%;
-}
-img.haircut-right {
+  top: 0px;
   position: absolute;
+}
+.haircut-right {
+  display: inline-block;
   width: 57%;
+}
+.white {
+  background-color: white;
 }
 .third {
   width: 33%;
@@ -68,32 +79,21 @@ img.haircut-right {
   position: relative;
 }
 .middle-panel {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 10%;
-  padding-bottom: 10%;
-  padding-left: 5%;
-  padding-right: 5%;
+  width: 80%;
   position: absolute;
-  top: 0px;
+  top: 20%;
+  left: 10%;
 }
 .left-panel {
   float: left;
-  width: 48%;
+  width: 50%;
 }
 .right-panel {
-  width: 48%;
+  width: 50%;
   float: right;
 }
-.left-panel {
-  padding-right: 2%;
-}
-.up-panel {
-  padding-bottom: 2%;
-}
-.left-image {
-  width: 50%;
+.img-left {
+  width: 108%;
 }
 img.hover:hover {
   filter: sepia(50%);
@@ -342,8 +342,26 @@ img.hover {
 .header .follow-us a {
   color: white;
 }
+.header .follow-us {
+  text-transform: none;
+}
 
 @media (min-width: 200px) {
+  .font-size-16 {
+    font-size: 4px;
+  }
+  .font-size-20 {
+    font-size: 8px;
+  }
+  .font-size-22 {
+    font-size: 8px;
+  }
+  .font-size-25 {
+    font-size: 8px;
+  }
+  .font-size-45 {
+    font-size: 11px;
+  }
   .slick-dots li button:before {
     font-size: 5px;
   }
@@ -362,10 +380,35 @@ img.hover {
   .header .links {
     font-size: 10px;
   }
+  .header .follow-us {
+    font-size: 6px;
+  }
 }
-
+@media (max-width: 300px) {
+  .haircut-left {
+    display: none;
+  }
+  .haircut-right {
+    width: 100%;
+  }
+}
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
+  .font-size-16 {
+    font-size: 16px;
+  }
+  .font-size-20 {
+    font-size: 20px;
+  }
+  .font-size-22 {
+    font-size: 22px;
+  }
+  .font-size-25 {
+    font-size: 25px;
+  }
+  .font-size-45 {
+    font-size: 45px;
+  }
   .slick-dots li button:before {
     font-size: 20px;
   }
@@ -383,5 +426,8 @@ img.hover {
   }
   .header .links {
     font-size: 46px;
+  }
+  .header .follow-us {
+    font-size: 26px;
   }
 }

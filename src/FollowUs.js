@@ -1,14 +1,15 @@
 import React from 'react';
+import getStrings from './localization';
 
 function FollowUs() {
   return (
     <div className='inline-block padding-top-2'>
-      <div className='gold-text follow-us'>Follow us</div>
+      <div className='gold-text follow-us'>{getStrings('FollowUs')}</div>
       <div>
-        <a href='/'>FACEBOOK</a>
+        <a href='/'>{getStrings('FACEBOOK')}</a>
       </div>
       <div>
-        <a href='/'>INSTAGRAM</a>
+        <a href='/'>{getStrings('INSTAGRAM')}</a>
       </div>
     </div>
   );

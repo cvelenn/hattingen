@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import getStrings from './localization';
 
 function Header() {
   const [show, setShow] = useState(false);
@@ -73,7 +74,7 @@ function Header() {
                     setShow(false);
                   }}
                 >
-                  Hairtransplatation
+                  {getStrings('Hairtransplatation')}
                 </Link>
               </div>
               <div className='page-item ignore'>
@@ -84,7 +85,7 @@ function Header() {
                     setShow(false);
                   }}
                 >
-                  Stille
+                  {getStrings('Stille')}
                 </Link>
               </div>
               <div className='page-item ignore'>
@@ -95,7 +96,7 @@ function Header() {
                     setShow(false);
                   }}
                 >
-                  FAQ
+                  {getStrings('FAQ')}
                 </Link>
               </div>
               <div className='page-item ignore'>
@@ -106,7 +107,7 @@ function Header() {
                     setShow(false);
                   }}
                 >
-                  Galerie
+                  {getStrings('Galerie')}
                 </Link>
               </div>
               <div className='page-item ignore'>
@@ -117,7 +118,7 @@ function Header() {
                     setShow(false);
                   }}
                 >
-                  Contact
+                  {getStrings('Contact')}
                 </Link>
               </div>
               <div className='page-item ignore'>
@@ -127,12 +128,12 @@ function Header() {
                     setShow(false);
                   }}
                 >
-                  Follow us{' '}
+                  {getStrings('FollowUs')}{' '}
                   <a className='ignore' href='/'>
-                    FACEBOOK
+                    {getStrings('FACEBOOK')}
                   </a>{' '}
                   <a className='ignore' href='/'>
-                    INSTAGRAM
+                    {getStrings('INSTAGRAM')}
                   </a>
                 </div>
               </div>

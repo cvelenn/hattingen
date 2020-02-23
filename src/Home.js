@@ -6,6 +6,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Circles from './Circles';
 import MiniGalery from './MiniGalery';
+import getStrings from './localization';
 
 function Home() {
   const [video, setVideo] = useState(false);
@@ -53,11 +54,9 @@ function Home() {
           </div>
         </Slider>
       </div>
-      <div className='wide relative'>
-        <div className='text'>
-          Haare gehören zu dem, was uns mit als erstes auffällt, wenn wir
-          jemanden kennen lernen. Sie sind ein essentieller Teil unseres
-          Erscheinungsbildes und das Sinnbild von Jugend, Gesundheit und
+      <div className='wide'>
+        <div className='pt-serif white-text font-size-22 text-short'>
+          {getStrings('homeText1')}
         </div>
         <img
           className='img-clock'
@@ -65,28 +64,55 @@ function Home() {
           alt=''
         />
       </div>
-      <div className='wide' id='hairfall'>
-        <img
-          className='haircut'
-          src='images/shutterstock_568820404.png'
-          alt=''
-        />
-        <img
-          className='haircut-right'
-          src='images/shutterstock_-1.png'
-          alt=''
-        />
+
+      <div className='wide haircut' id='hairfall'>
+        <div className='haircut-left'>
+          <img
+            className='haircut'
+            src='images/shutterstock_568820404.png'
+            alt=''
+          />
+        </div>
+        <div className='haircut-right'>
+          <div className='pt-serif font-size-45 gold-text text-short'>
+            {getStrings('homeTitle2')}
+          </div>
+          <div className='pt-serif font-size-20 text-short text-short-small-margin'>
+            {getStrings('homeText2')}
+          </div>
+          <div className='pt-serif font-size-20 text-short text-short-small-margin'>
+            {getStrings('homeText3')}
+          </div>
+        </div>
       </div>
       <div className='wide white'>
         <div className='middle'>
-          <div className='third'>
+          <div className='third center-text'>
             <img alt='' src='images/Group 3038.png' />
+            <div className='gold-text anton font-size-25'>asdasdasd</div>
+            <div className='pt-serif font-size-16'>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua. At vero eos et accusam et justo
+            </div>
           </div>
-          <div className='third'>
+          <div className='third center-text'>
             <img alt='' src='images/Group 3131.png' />
+            <div className='gold-text anton font-size-25'>asdasdasd</div>
+            <div className='pt-serif font-size-16'>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua. At vero eos et accusam et justo
+            </div>
           </div>
-          <div className='third'>
+          <div className='third center-text'>
             <img alt='' src='images/Group 3208.png' />
+            <div className='gold-text anton font-size-25'>asdasdasd</div>
+            <div className='pt-serif font-size-16'>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua. At vero eos et accusam et justo
+            </div>
           </div>
         </div>
       </div>
@@ -95,10 +121,13 @@ function Home() {
         <MiniGalery />
       </div>
       <div className='wide rocks'>
-        <div>
-          Haare gehören zu dem, was uns mit als erstes auffällt, wenn wir
-          jemanden kennen lernen. Sie sind ein essentieller Teil unseres
-          Erscheinungsbildes und das Sinnbild von Jugend, Gesundheit und
+        <div className='center-text'>
+          <div className='gold-text anton font-size-25'>asdasdasd</div>
+          <div className='pt-serif font-size-16'>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo
+          </div>
         </div>
         <div className='relative'>
           <img className='wide strip' alt='' src='images/shutterstock_-4.png' />

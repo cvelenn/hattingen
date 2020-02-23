@@ -3,6 +3,7 @@ import ContactSection from './ContactSection';
 import FollowUs from './FollowUs';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
+import getStrings from './localization';
 
 function Footer() {
   return (
@@ -12,29 +13,29 @@ function Footer() {
       <div className='inline-block'>
         <h className='gold-text h'>LINK</h>
         <div>
-          <Link to='/transplantation'>Haartransplantation</Link>
+          <Link to='/transplantation'>{getStrings('Hairtransplatation')}</Link>
         </div>
         <div>
-          <Link to='/#hairfall'>Herausfall</Link>
+          <Link to='/#hairfall'>{getStrings('Herausfall')}</Link>
         </div>
         <div>
-          <HashLink to='/transplantation#preis'>Preis</HashLink>
+          <HashLink to='/transplantation#preis'>{getStrings('Preis')}</HashLink>
         </div>
         <div>
-          <Link to='/faq'>FAQ</Link>
+          <Link to='/faq'>{getStrings('FAQ')}</Link>
         </div>
         <div>
-          <Link to='/galerie'>Galerie</Link>
+          <Link to='/galerie'>{getStrings('Galerie')}</Link>
         </div>
       </div>
 
       <div className='inline-block'>
-        <h className='gold-text h'>TERMIN VEREINBAREN</h>
-        <div>Persönliche Beratung</div>
-        <div>Onlineberatung </div>
-        <div>Skypeberatung </div>
-        <div>Rückrufservice </div>
-        <div>Weitere Beratungsorte </div>
+        <h className='gold-text h'>{getStrings('TERMINVEREINBAREN')}</h>
+        <div>{getStrings('Beratung')}</div>
+        <div>{getStrings('Onlineberatung')} </div>
+        <div>{getStrings('Skypeberatung')} </div>
+        <div>{getStrings('Rückrufservice')} </div>
+        <div>{getStrings('Beratungsorte')} </div>
       </div>
 
       <FollowUs className='header-follow-us' />
