@@ -17,7 +17,7 @@ function Contact() {
         />
       </Helmet>
       <div className='wide'>
-        <img className='wide-img' src='images/shutterstock_-35.png' alt='' />
+        <img className='wide-img' src='./images/shutterstock_-35.png' alt='' />
         <div className='white-text text-background'>
           Haare gehören zu dem, was uns mit als erstes auffällt, wenn wir
         </div>

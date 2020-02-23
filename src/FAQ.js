@@ -17,7 +17,7 @@ function FAQ() {
       <div className='wide'>
         <img
           className='wide-img'
-          src='images/shutterstock_551317642.png'
+          src='./images/shutterstock_551317642.png'
           alt=''
         />
       </div>
@@ -32,7 +32,7 @@ function FAQ() {
         <FAQElement question='question' answer='answer' />
       </div>
       <div className='wide relative'>
-        <img className='telescope' alt='' src='images/teleskop2.png' />
+        <img className='telescope' alt='' src='./images/teleskop2.png' />
         <MiniGalery />
       </div>
       <Circles />

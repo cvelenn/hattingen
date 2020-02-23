@@ -14,16 +14,20 @@ function Still() {
         />
       </Helmet>
       <div className='wide'>
-        <img className='wide-img' src='images/dreh19a.png' alt='' />
+        <img className='wide-img' src='./images/dreh19a.png' alt='' />
       </div>
       <div className='wide rocks'>
         <div>Haare gehören zu dem, was uns mit als erstes auffällt</div>
         <div className='relative'>
-          <img className='wide strip' alt='' src='images/shutterstock_-4.png' />
+          <img
+            className='wide strip'
+            alt=''
+            src='./images/shutterstock_-4.png'
+          />
           <div className='mac'>
-            <img src='images/Mac-Video.png' alt='' />
+            <img src='./images/Mac-Video.png' alt='' />
             <img
-              src='images/play.png'
+              src='./images/play.png'
               className='play'
               alt=''
               onClick={() => setVideo(true)}
@@ -48,7 +52,7 @@ function Still() {
         <div className='wide'>
           <div>
             <div className='left-panel-still'>
-              <img className='width-50' src='images/mendl.png' alt='' />
+              <img className='width-50' src='./images/mendl.png' alt='' />
             </div>
             <div className='right-panel-still picture-text'>
               <div>title</div>
@@ -61,14 +65,14 @@ function Still() {
               <div>text</div>
             </div>
             <div className='right-panel-still'>
-              <img className='width-50' src='images/saegebrecht.png' alt='' />
+              <img className='width-50' src='./images/saegebrecht.png' alt='' />
             </div>
           </div>
           <div>
             <div className='left-panel-still'>
               <img
                 className='width-50'
-                src='images/sandraFleckenstein.png'
+                src='./images/sandraFleckenstein.png'
                 alt=''
               />
             </div>
@@ -83,12 +87,12 @@ function Still() {
               <div>text</div>
             </div>
             <div className='right-panel-still'>
-              <img className='width-50' src='images/borner.png' alt='' />
+              <img className='width-50' src='./images/borner.png' alt='' />
             </div>
           </div>
         </div>
         <div className='wide'>
-          <img className='wide-img' src='images/dreh1.png' alt='' />
+          <img className='wide-img' src='./images/dreh1.png' alt='' />
         </div>
         <div className='wide rocks'>
           <div>
@@ -96,10 +100,10 @@ function Still() {
           </div>
         </div>
         <div className='wide rocks related-container'>
-          <img className='related' src='images/Image 1.png' alt='' />
-          <img className='related' src='images/Image 2.png' alt='' />
-          <img className='related' src='images/Image 3.png' alt='' />
-          <img className='related' src='images/Image 1.png' alt='' />
+          <img className='related' src='./images/Image 1.png' alt='' />
+          <img className='related' src='./images/Image 2.png' alt='' />
+          <img className='related' src='./images/Image 3.png' alt='' />
+          <img className='related' src='./images/Image 1.png' alt='' />
         </div>
       </div>
     </div>

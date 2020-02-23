@@ -9,7 +9,7 @@ function FAQElement({ question, answer }) {
         {plus && (
           <img
             className='faq-icon'
-            src='images/plus.png'
+            src='./images/plus.png'
             alt=''
             onClick={() => setPlus(false)}
           />
@@ -17,7 +17,7 @@ function FAQElement({ question, answer }) {
         {!plus && (
           <img
             className='faq-icon'
-            src='images/minus.png'
+            src='./images/minus.png'
             alt=''
             onClick={() => setPlus(true)}
           />

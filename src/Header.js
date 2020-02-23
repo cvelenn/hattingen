@@ -20,7 +20,7 @@ function Header() {
   }
   return (
     <div className='header wide'>
-      <img className='wide line' src='/images/Rectangle.png' alt='' />
+      <img className='wide line' src='./images/Rectangle.png' alt='' />
 
       <div
         className='menu-container ignore'
@@ -32,7 +32,7 @@ function Header() {
           {!show && (
             <img
               className='hamburger ignore'
-              src='/images/hamburger.png'
+              src='./images/hamburger.png'
               alt=''
               onClick={e => {
                 setShow(true);
@@ -42,7 +42,7 @@ function Header() {
           {show && (
             <img
               className='hamburger x ignore'
-              src='/images/x.png'
+              src='./images/x.png'
               alt=''
               onClick={e => {
                 setShow(false);
@@ -50,11 +50,11 @@ function Header() {
             />
           )}
           <Link className='white-text' to='/'>
-            <img className='logo ignore' src='/images/Logo.png' alt='' />
+            <img className='logo ignore' src='./images/Logo.png' alt='' />
           </Link>
           <img
             className='line-menu wide line-menu-down ignore'
-            src='/images/Rectangle.png'
+            src='./images/Rectangle.png'
             alt=''
           />
         </div>

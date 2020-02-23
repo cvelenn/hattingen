@@ -34,21 +34,21 @@ function Home() {
           <div>
             <img
               className='wide-img'
-              src='images/shutterstock_-28.png'
+              src='./images/shutterstock_-28.png'
               alt=''
             />
           </div>
           <div>
             <img
               className='wide-img'
-              src='images/shutterstock_-29.png'
+              src='./images/shutterstock_-29.png'
               alt=''
             />
           </div>
           <div>
             <img
               className='wide-img'
-              src='images/shutterstock_-30.png'
+              src='./images/shutterstock_-30.png'
               alt=''
             />
           </div>
@@ -60,7 +60,7 @@ function Home() {
         </div>
         <img
           className='img-clock'
-          src='images/shutterstock_259084145crop.png'
+          src='./images/shutterstock_259084145crop.png'
           alt=''
         />
       </div>
@@ -69,7 +69,7 @@ function Home() {
         <div className='haircut-left'>
           <img
             className='haircut'
-            src='images/shutterstock_568820404.png'
+            src='./images/shutterstock_568820404.png'
             alt=''
           />
         </div>
@@ -88,7 +88,7 @@ function Home() {
       <div className='wide white'>
         <div className='middle'>
           <div className='third center-text'>
-            <img alt='' src='images/Group 3038.png' />
+            <img alt='' src='./images/Group 3038.png' />
             <div className='gold-text anton font-size-25'>asdasdasd</div>
             <div className='pt-serif font-size-16'>
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
@@ -97,7 +97,7 @@ function Home() {
             </div>
           </div>
           <div className='third center-text'>
-            <img alt='' src='images/Group 3131.png' />
+            <img alt='' src='./images/Group 3131.png' />
             <div className='gold-text anton font-size-25'>asdasdasd</div>
             <div className='pt-serif font-size-16'>
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
@@ -106,7 +106,7 @@ function Home() {
             </div>
           </div>
           <div className='third center-text'>
-            <img alt='' src='images/Group 3208.png' />
+            <img alt='' src='./images/Group 3208.png' />
             <div className='gold-text anton font-size-25'>asdasdasd</div>
             <div className='pt-serif font-size-16'>
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
@@ -117,7 +117,7 @@ function Home() {
         </div>
       </div>
       <div className='wide relative'>
-        <img className='telescope' alt='' src='images/teleskop2.png' />
+        <img className='telescope' alt='' src='./images/teleskop2.png' />
         <MiniGalery />
       </div>
       <div className='wide rocks'>
@@ -130,11 +130,15 @@ function Home() {
           </div>
         </div>
         <div className='relative'>
-          <img className='wide strip' alt='' src='images/shutterstock_-4.png' />
+          <img
+            className='wide strip'
+            alt=''
+            src='./images/shutterstock_-4.png'
+          />
           <div className='mac'>
-            <img src='images/Mac-Video.png' alt='' />
+            <img src='./images/Mac-Video.png' alt='' />
             <img
-              src='images/play.png'
+              src='./images/play.png'
               className='play'
               alt=''
               onClick={() => setVideo(true)}

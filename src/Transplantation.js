@@ -16,7 +16,7 @@ function Transplantation() {
       <div className='wide'>
         <img
           className='wide-img'
-          src='images/shutterstock_568819498.png'
+          src='./images/shutterstock_568819498.png'
           alt=''
         />
       </div>
@@ -30,10 +30,10 @@ function Transplantation() {
       <div className='wide'>
         <img
           className='folicule'
-          src='images/shutterstock_386769496_folicule.png'
+          src='./images/shutterstock_386769496_folicule.png'
           alt=''
         />
-        <img className='wide' src='images/shutterstock_-21.png' alt='' />
+        <img className='wide' src='./images/shutterstock_-21.png' alt='' />
       </div>
 
       <div className='wide rocks'>

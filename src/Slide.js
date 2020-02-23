@@ -5,22 +5,22 @@ function Slide() {
   return (
     <div className='wide'>
       <div className='small-img'>
-        <img src='images/shutterstock_-24.png' alt='' />
+        <img src='./images/shutterstock_-24.png' alt='' />
       </div>
       <div className='small-img'>
-        <img src='images/beispiel.png' alt='' />
+        <img src='./images/beispiel.png' alt='' />
         <Link className='beispiel' to='/galerie'>
           button
         </Link>
       </div>
       <div className='small-img'>
-        <img src='images/shutterstock_-31.png' alt='' />
+        <img src='./images/shutterstock_-31.png' alt='' />
       </div>
       <div className='small-img'>
-        <img src='images/shutterstock_-28.png' alt='' />
+        <img src='./images/shutterstock_-28.png' alt='' />
       </div>
       <div className='small-img'>
-        <img src='images/shutterstock_-23.png' alt='' />
+        <img src='./images/shutterstock_-23.png' alt='' />
       </div>
     </div>
   );
