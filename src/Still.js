@@ -96,10 +96,10 @@ function Still() {
           </div>
         </div>
         <div className='wide rocks related-container'>
-          <img className='related' src='images/Image -1.png' alt='' />
+          <img className='related' src='images/Image 1.png' alt='' />
           <img className='related' src='images/Image 2.png' alt='' />
           <img className='related' src='images/Image 3.png' alt='' />
-          <img className='related' src='images/Image -1.png' alt='' />
+          <img className='related' src='images/Image 1.png' alt='' />
         </div>
       </div>
     </div>
