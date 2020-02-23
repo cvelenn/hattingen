@@ -1,5 +1,5 @@
 body {
-  background-image: url('/images/BG-Texture.png');
+  background-image: url('/hattingen/images/BG-Texture.png');
 }
 
 .wide {
@@ -37,7 +37,7 @@ body {
   top: 0px;
 }
 .haircut {
-  background: url('/images/shutterstock_-1.png');
+  background: url('/hattingen/images/shutterstock_-1.png');
   background-size: cover;
 }
 .haircut-left {
@@ -102,7 +102,7 @@ img.hover {
   filter: none;
 }
 .rocks {
-  background-image: url('/images/shutterstock_-12.png');
+  background-image: url('/hattingen/images/shutterstock_-12.png');
 }
 .strip {
   padding-top: 10%;
@@ -120,7 +120,7 @@ img.hover {
   width: 100%;
 }
 .circle-left {
-  background-image: url('/images/Group 3230.png');
+  background-image: url('/hattingen/images/Group 3230.png');
   background-repeat: no-repeat;
   background-size: contain;
   display: inline-block;
@@ -168,7 +168,7 @@ img.hover {
   top: 25%;
   z-index: 1;
   left: 10%;
-  background-image: url('/images/BG-Texture.png');
+  background-image: url('/hattingen/images/BG-Texture.png');
 }
 
 .menu-container .white-text:hover {
@@ -275,11 +275,11 @@ img.hover {
   width: 100%;
 }
 .text-background {
-  background-image: url('/images/BG-Texture.png');
+  background-image: url('/hattingen/images/BG-Texture.png');
   background-size: contain;
 }
 .form-container {
-  background-image: url('/images/shutterstock_-36.png');
+  background-image: url('/hattingen/images/shutterstock_-36.png');
   background-size: contain;
 }
 .form {
