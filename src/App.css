@@ -1,41 +1,3 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 body {
   background-image: url('/images/BG-Texture.png');
 }
@@ -192,14 +154,9 @@ img.hover {
   bottom: 5%;
 }
 .slick-dots li button:before {
-  font-size: 20px;
   line-height: 20px;
 }
-.header {
-  background-color: white;
-  padding-bottom: 4%;
-  position: relative;
-}
+
 .line {
   bottom: 0px;
   position: absolute;
@@ -218,10 +175,10 @@ img.hover {
   color: #bb9a73;
 }
 .hamburger {
-  width: 4%;
   left: 5%;
   position: relative;
-  padding-bottom: 2%;
+  padding: 2%;
+  width: 7% !important;
 }
 .hamburger:hover {
   filter: sepia(100%);
@@ -233,19 +190,10 @@ img.hover {
   padding: 1%;
 }
 .line-menu {
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
+  display: block;
 }
 .line-menu-up {
   top: 100%;
-}
-.line-menu-down {
-  display: none;
-}
-.page-item {
-  padding: 5%;
-  padding-left: 10%;
 }
 .folicule {
   width: 25%;
@@ -265,7 +213,6 @@ img.hover {
   width: 20%;
 }
 .beispiel {
-  font-size: 7px;
   color: greenyellow;
   position: absolute;
   left: 24%;
@@ -357,17 +304,14 @@ img.hover {
 
 .footer {
   font-family: 'PT Serif';
-  font-size: 16px;
   background-color: #001e2e;
   padding: 2%;
 }
-.footer h {
+.footer .h {
   font-family: Anton;
-  font-size: 20px;
 }
 .footer .follow-us {
   font-family: 'Dancing Script';
-  font-size: 40px;
   padding-top: 2%;
 }
 .inline-block {
@@ -381,4 +325,63 @@ img.hover {
 }
 .inline-block a {
   color: white;
+}
+
+.header {
+  background-color: white;
+  padding-bottom: 4%;
+  position: relative;
+  z-index: 2;
+}
+.header .links {
+  text-transform: uppercase;
+  font-family: Anton;
+  text-align: center;
+  padding: 5%;
+}
+.header .follow-us a {
+  color: white;
+}
+
+@media (min-width: 200px) {
+  .slick-dots li button:before {
+    font-size: 5px;
+  }
+  .beispiel {
+    font-size: 3px;
+  }
+  .footer {
+    font-size: 4px;
+  }
+  .footer .h {
+    font-size: 5px;
+  }
+  .footer .follow-us {
+    font-size: 10px;
+  }
+  .header .links {
+    font-size: 10px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  .slick-dots li button:before {
+    font-size: 20px;
+  }
+  .beispiel {
+    font-size: 7px;
+  }
+  .footer {
+    font-size: 16px;
+  }
+  .footer .h {
+    font-size: 20px;
+  }
+  .footer .follow-us {
+    font-size: 40px;
+  }
+  .header .links {
+    font-size: 46px;
+  }
 }

@@ -10,7 +10,7 @@ function Footer() {
       <ContactSection />
 
       <div className='inline-block'>
-        <h className='gold-text'>LINK</h>
+        <h className='gold-text h'>LINK</h>
         <div>
           <Link to='/transplantation'>Haartransplantation</Link>
         </div>
@@ -29,7 +29,7 @@ function Footer() {
       </div>
 
       <div className='inline-block'>
-        <h className='gold-text'>TERMIN VEREINBAREN</h>
+        <h className='gold-text h'>TERMIN VEREINBAREN</h>
         <div>Persönliche Beratung</div>
         <div>Onlineberatung </div>
         <div>Skypeberatung </div>
@@ -37,7 +37,7 @@ function Footer() {
         <div>Weitere Beratungsorte </div>
       </div>
 
-      <FollowUs />
+      <FollowUs className='header-follow-us' />
     </div>
   );
 }

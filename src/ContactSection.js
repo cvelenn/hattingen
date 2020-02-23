@@ -3,7 +3,7 @@ import React from 'react';
 function ContactSection() {
   return (
     <div className='inline-block'>
-      <h className='gold-text'>KONTAKT</h>
+      <div className='gold-text h'>KONTAKT</div>
       <div>
         <div>Hattingen Hair Transplantation</div>
         <div>Schwertstrasse 4</div>
